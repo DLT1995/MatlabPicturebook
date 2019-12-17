@@ -1,0 +1,16 @@
+close all; clear all; clc;
+x = -20:20;
+y = x.^2 + 2*x + 1;
+plot(x,y);
+figure;
+z = magic(4);
+plot(z);
+figure;
+c = [1+2i,4+3i,7+11i];
+plot(c);
+figure;
+x1 = 0:0.01:10;
+y1 = exp(sin(x1));
+y2 = sin(2*x1+2.*pi./3);
+y3 = exp(-0.1.*x1).*sin(6*x1);
+plot(x1,y1,x1,y2,x1,y3);
